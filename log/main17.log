@@ -1,0 +1,21 @@
+Socket on 192.168.109.17 created successfully!
+Received -163754450 string is : { "AliveInterval" : 20, "ChannelNum" : 1, "DeviceType " : "IPC", "ExtraChannel" : 0, "Ret" : 100, "SessionID" : "0x0000001D" }
+;
+session id is : 0x0000001D
+Send Name SystemInfo: {"Name":"SystemInfo","SessionID":"0x0000001D"}
+Received string  SystemInfo is : { "Name" : "SystemInfo", "Ret" : 100, "SessionID" : "0x1d", "SystemInfo" : { "AlarmInChannel" : 2, "AlarmOutChannel" : 1, "AudioInChannel" : 1, "BuildTime" : "2013-12-16 15:22:15", "CombineSwitch" : 0, "DeviceRunTime" : "0x00002148", "DigChannel" : 0, "EncryptVersion" : "Unknown", "ExtraChannel" : 0, "HardWare" : "50H10L_S39", "HardWareVersion" : "Unknown", "SerialNo" : "99be244ae7b34bfe", "SoftWareVersion" : "V4.02.R11.00002510.10010", "TalkInChannel" : 1, "TalkOutChannel" : 1, "UpdataTime" : "", "UpdataType" : "0x00000000", "VideoInChannel" : 1, "VideoOutChannel" : 1 } }
+;
+Send KeepAlive {"Name":"KeepAlive","SessionID":"0x0000001D"}
+Received string KeepAlive is : { "Name" : "KeepAlive", "Ret" : 100, "SessionID" : "0x0000001D" }
+
+size of now ===== 19
+Time setting {"Name":"OPTimeSettingNoRTC","OPTimeSettingNoRTC":"2014-04-18 10:31:28","SessionID":"0x0000001D"}
+Send name & session id again : {"Name":"","SessionID":"0x0000001D"}
+Received string Last 1 is : { "Name" : "", "Ret" : 100, "SessionID" : "0x0000001D" }
+
+Received string Last 2 is : { "Name" : "", "Ret" : 100, "SessionID" : "0x0000001D" }
+
+Second connect connected successfully!
+Send OPMonitor in child process :: {"Name":"OPMonitor","OPMonitor":{"Action":"Claim","Parameter":{"Channel":0,"CombinMode":"NONE","StreamType":"Main","TransMode":"TCP"}},"SessionID":"0x0000001D"}
+Child receive 1:Received string OPMonitor in child is : { "Name" : "OPMonitor", "Ret" : 100, "SessionID" : "0x0000001D" }
+

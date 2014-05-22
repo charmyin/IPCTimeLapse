@@ -1,0 +1,23 @@
+
+ipcs.info
+----------last sector of ip;ip;firstStartTime-firstEndTime-shotTimeInterval,secondtStartTime-secondEndTime-shotTimeInterval;secondRestartTime, thirdRestartTime, forthRestartTime This must be the last row, no more enter-------------
+
+** runx.sh, rebuildAtJobsChangeFrame.sh, mmpegWatchdog.sh need set execute path.
+
+0.Test whether ip camreas on line
+  "sudo ./checkIPCameras.sh"
+
+
+1.Once boot up
+	1.1 "sudo ./runx.sh" runs all the camera task;
+	1.2 "sudo ./mmpegWatchdog.sh" to restart mmpeg when it halted.
+	1.3 "sudo ./rebuildAtJobsChangeFrame.sh" to setup "at" jobs to restart
+		 mmpeg when time is up to change the frame.
+	
+2.Once the files under camera storage directory stops increase after 5 minutes(Parent dir modified time 5 more minutes than now)
+	2.1 "sudo ./restart xx" restart the stoped mmpeg and main program   
+	
+3.Add a new camera
+	2.1 Add new line to ipcs.info
+	2.2 "sudo ./addNewCamera.sh 20"
+
