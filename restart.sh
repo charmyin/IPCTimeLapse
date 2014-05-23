@@ -18,14 +18,14 @@ while read line; do
 done < ${pipeProgramPath}/pids/$1.pids
 
 #j=0
-while read line1; do
+#while read line1; do
 #echo $line1
-  if [[ -n "$line1" ]]; then
-   sudo kill ${line1}
-    #((j++))
-  fi
-done < ${pipeProgramPath}pids/${1}video.pids 
+#  if [[ -n "$line1" ]]; then
+#   sudo kill ${line1}
+#    #((j++))
+#  fi
+#done < ${pipeProgramPath}pids/${1}video.pids 
 
 #--------------Restart the capture program with ip first id----------------#
 sudo ${pipeProgramPath}timelapse.sh $1
-sudo ${pipeProgramPath}timeVideoLapse.sh $1
+#sudo ${pipeProgramPath}timeVideoLapse.sh $1

@@ -15,7 +15,7 @@ while read line; do
     ipcConfigLineArray[i]=${line}
     ((i++))
   fi
-done < ${pipeProgramPath}ipcs.info
+done < /etc/ipcs.info
 
 for ipcConfigLine in "${ipcConfigLineArray[@]}"
 do
