@@ -2711,3 +2711,522 @@ Second connect connected successfully!
 Send OPMonitor in child process :: {"Name":"OPMonitor","OPMonitor":{"Action":"Claim","Parameter":{"Channel":0,"CombinMode":"NONE","StreamType":"Main","TransMode":"TCP"}},"SessionID":"0x00000003"}
 Child receive 1:Received string OPMonitor in child is : { "Name" : "OPMonitor", "Ret" : 100, "SessionID" : "0x00000003" }
 
+Socket on 192.168.109.15 created successfully!
+Received -1226384904 string is : { "AliveInterval" : 20, "ChannelNum" : 1, "DeviceType " : "IPC", "ExtraChannel" : 0, "Ret" : 100, "SessionID" : "0x00000001" }
+;
+session id is : 0x00000001
+Send Name SystemInfo: {"Name":"SystemInfo","SessionID":"0x00000001"}
+Received string  SystemInfo is : { "Name" : "SystemInfo", "Ret" : 100, "SessionID" : "0x1", "SystemInfo" : { "AlarmInChannel" : 2, "AlarmOutChannel" : 1, "AudioInChannel" : 1, "BuildTime" : "2013-12-16 15:22:15", "CombineSwitch" : 0, "DeviceRunTime" : "0x0000AD24", "DigChannel" : 0, "EncryptVersion" : "Unknown", "ExtraChannel" : 0, "HardWare" : "50H10L_S39", "HardWareVersion" : "Unknown", "SerialNo" : "8c02e921079ea55c", "SoftWareVersion" : "V4.02.R11.00002510.10010", "TalkInChannel" : 1, "TalkOutChannel" : 1, "UpdataTime" : "", "UpdataType" : "0x00000000", "VideoInChannel" : 1, "VideoOutChannel" : 1 } }
+;
+Send KeepAlive {"Name":"KeepAlive","SessionID":"0x00000001"}
+Received string KeepAlive is : { "Name" : "KeepAlive", "Ret" : 100, "SessionID" : "0x00000001" }
+
+size of now ===== 19
+Time setting {"Name":"OPTimeSettingNoRTC","OPTimeSettingNoRTC":"2014-05-24 20:25:57","SessionID":"0x00000001"}
+Send name & session id again : {"Name":"","SessionID":"0x00000001"}
+Received string Last 1 is : { "Name" : "", "Ret" : 100, "SessionID" : "0x00000001" }
+
+Received string Last 2 is : { "Name" : "", "Ret" : 100, "SessionID" : "0x00000001" }
+
+Second connect connected successfully!
+Send OPMonitor in child process :: {"Name":"OPMonitor","OPMonitor":{"Action":"Claim","Parameter":{"Channel":0,"CombinMode":"NONE","StreamType":"Main","TransMode":"TCP"}},"SessionID":"0x00000001"}
+Child receive 1:Received string OPMonitor in child is : { "Name" : "OPMonitor", "Ret" : 100, "SessionID" : "0x00000001" }
+
+Socket on 192.168.109.15 created successfully!
+Received -1226692104 string is : { "AliveInterval" : 20, "ChannelNum" : 1, "DeviceType " : "IPC", "ExtraChannel" : 0, "Ret" : 100, "SessionID" : "0x00000005" }
+;
+session id is : 0x00000005
+Send Name SystemInfo: {"Name":"SystemInfo","SessionID":"0x00000005"}
+Received string  SystemInfo is : { "Name" : "SystemInfo", "Ret" : 100, "SessionID" : "0x5", "SystemInfo" : { "AlarmInChannel" : 2, "AlarmOutChannel" : 1, "AudioInChannel" : 1, "BuildTime" : "2013-12-16 15:22:15", "CombineSwitch" : 0, "DeviceRunTime" : "0x0000AD34", "DigChannel" : 0, "EncryptVersion" : "Unknown", "ExtraChannel" : 0, "HardWare" : "50H10L_S39", "HardWareVersion" : "Unknown", "SerialNo" : "8c02e921079ea55c", "SoftWareVersion" : "V4.02.R11.00002510.10010", "TalkInChannel" : 1, "TalkOutChannel" : 1, "UpdataTime" : "", "UpdataType" : "0x00000000", "VideoInChannel" : 1, "VideoOutChannel" : 1 } }
+;
+Send KeepAlive {"Name":"KeepAlive","SessionID":"0x00000005"}
+Received string KeepAlive is : { "Name" : "KeepAlive", "Ret" : 100, "SessionID" : "0x00000005" }
+
+size of now ===== 19
+Time setting {"Name":"OPTimeSettingNoRTC","OPTimeSettingNoRTC":"2014-05-24 20:42:08","SessionID":"0x00000005"}
+Send name & session id again : {"Name":"","SessionID":"0x00000005"}
+Received string Last 1 is : { "Name" : "", "Ret" : 100, "SessionID" : "0x00000005" }
+
+Received string Last 2 is : { "Name" : "", "Ret" : 100, "SessionID" : "0x00000005" }
+
+Send OPMonitor in father  process :: {"Name":"OPMonitor","OPMonitor":{"Action":"Start","Parameter":{"Channel":0,"CombinMode":"NONE","StreamType":"Main","TransMode":"TCP"}},"SessionID":"0x00000005"}
+Parent receive 1:
+Empty thing-----------
+Main is running at 2014-05-24 20:42:29
+Main is running at 2014-05-24 20:42:49
+Main is running at 2014-05-24 20:43:09
+Main is running at 2014-05-24 20:43:29
+Main is running at 2014-05-24 20:43:49
+Main is running at 2014-05-24 20:44:09
+Main is running at 2014-05-24 20:44:29
+Main is running at 2014-05-24 20:44:49
+Main is running at 2014-05-24 20:45:09
+Main is running at 2014-05-24 20:45:29
+Main is running at 2014-05-24 20:45:49
+Main is running at 2014-05-24 20:46:09
+Main is running at 2014-05-24 20:46:29
+Main is running at 2014-05-24 20:46:49
+Main is running at 2014-05-24 20:47:09
+Main is running at 2014-05-24 20:47:29
+Main is running at 2014-05-24 20:47:49
+Main is running at 2014-05-24 20:48:09
+Main is running at 2014-05-24 20:48:29
+Main is running at 2014-05-24 20:48:49
+Main is running at 2014-05-24 20:49:09
+Main is running at 2014-05-24 20:49:29
+Main is running at 2014-05-24 20:49:49
+Main is running at 2014-05-24 20:50:09
+Main is running at 2014-05-24 20:50:29
+Main is running at 2014-05-24 20:50:49
+Main is running at 2014-05-24 20:51:09
+Main is running at 2014-05-24 20:51:29
+Main is running at 2014-05-24 20:51:49
+Main is running at 2014-05-24 20:52:09
+Main is running at 2014-05-24 20:52:29
+Main is running at 2014-05-24 20:52:49
+Main is running at 2014-05-24 20:53:09
+Main is running at 2014-05-24 20:53:29
+Main is running at 2014-05-24 20:53:49
+Main is running at 2014-05-24 20:54:09
+Main is running at 2014-05-24 20:54:29
+Main is running at 2014-05-24 20:54:49
+Main is running at 2014-05-24 20:55:09
+Main is running at 2014-05-24 20:55:29
+Main is running at 2014-05-24 20:55:49
+Main is running at 2014-05-24 20:56:09
+Main is running at 2014-05-24 20:56:29
+Main is running at 2014-05-24 20:56:49
+Main is running at 2014-05-24 20:57:09
+Main is running at 2014-05-24 20:57:29
+Main is running at 2014-05-24 20:57:49
+Main is running at 2014-05-24 20:58:09
+Main is running at 2014-05-24 20:58:29
+Main is running at 2014-05-24 20:58:49
+Main is running at 2014-05-24 20:59:09
+Main is running at 2014-05-24 20:59:29
+Main is running at 2014-05-24 20:59:49
+Main is running at 2014-05-24 21:00:09
+Main is running at 2014-05-24 21:00:29
+Main is running at 2014-05-24 21:00:49
+Main is running at 2014-05-24 21:01:09
+Main is running at 2014-05-24 21:01:29
+Main is running at 2014-05-24 21:01:49
+Main is running at 2014-05-24 21:02:09
+Main is running at 2014-05-24 21:02:29
+Main is running at 2014-05-24 21:02:49
+Main is running at 2014-05-24 21:03:09
+Main is running at 2014-05-24 21:03:29
+Main is running at 2014-05-24 21:03:49
+Main is running at 2014-05-24 21:04:09
+Main is running at 2014-05-24 21:04:29
+Main is running at 2014-05-24 21:04:49
+Main is running at 2014-05-24 21:05:09
+Main is running at 2014-05-24 21:05:29
+Main is running at 2014-05-24 21:05:49
+Main is running at 2014-05-24 21:06:09
+Main is running at 2014-05-24 21:06:29
+Main is running at 2014-05-24 21:06:49
+Main is running at 2014-05-24 21:07:09
+Main is running at 2014-05-24 21:07:29
+Main is running at 2014-05-24 21:07:49
+Main is running at 2014-05-24 21:08:09
+Main is running at 2014-05-24 21:08:29
+Main is running at 2014-05-24 21:08:49
+Main is running at 2014-05-24 21:09:09
+Main is running at 2014-05-24 21:09:29
+Main is running at 2014-05-24 21:09:49
+Main is running at 2014-05-24 21:10:09
+Main is running at 2014-05-24 21:10:29
+Main is running at 2014-05-24 21:10:49
+Main is running at 2014-05-24 21:11:09
+Main is running at 2014-05-24 21:11:29
+Main is running at 2014-05-24 21:11:49
+Main is running at 2014-05-24 21:12:09
+Main is running at 2014-05-24 21:12:29
+Main is running at 2014-05-24 21:12:49
+Main is running at 2014-05-24 21:13:09
+Main is running at 2014-05-24 21:13:29
+Main is running at 2014-05-24 21:13:49
+Main is running at 2014-05-24 21:14:09
+Main is running at 2014-05-24 21:14:29
+Main is running at 2014-05-24 21:14:49
+Main is running at 2014-05-24 21:15:09
+Main is running at 2014-05-24 21:15:29
+Main is running at 2014-05-24 21:15:49
+Main is running at 2014-05-24 21:16:09
+Main is running at 2014-05-24 21:16:29
+Main is running at 2014-05-24 21:16:49
+Main is running at 2014-05-24 21:17:09
+Main is running at 2014-05-24 21:17:29
+Main is running at 2014-05-24 21:17:49
+Main is running at 2014-05-24 21:18:09
+Main is running at 2014-05-24 21:18:29
+Main is running at 2014-05-24 21:18:49
+Main is running at 2014-05-24 21:19:09
+Main is running at 2014-05-24 21:19:29
+Main is running at 2014-05-24 21:19:49
+Main is running at 2014-05-24 21:20:09
+Main is running at 2014-05-24 21:20:29
+Main is running at 2014-05-24 21:20:49
+Main is running at 2014-05-24 21:21:09
+Main is running at 2014-05-24 21:21:29
+Main is running at 2014-05-24 21:21:49
+Main is running at 2014-05-24 21:22:09
+Main is running at 2014-05-24 21:22:29
+Main is running at 2014-05-24 21:22:49
+Main is running at 2014-05-24 21:23:09
+Main is running at 2014-05-24 21:23:29
+Main is running at 2014-05-24 21:23:49
+Main is running at 2014-05-24 21:24:09
+Main is running at 2014-05-24 21:24:29
+Main is running at 2014-05-24 21:24:49
+Main is running at 2014-05-24 21:25:09
+Main is running at 2014-05-24 21:25:29
+Main is running at 2014-05-24 21:25:49
+Main is running at 2014-05-24 21:26:09
+Main is running at 2014-05-24 21:26:29
+Main is running at 2014-05-24 21:26:49
+Main is running at 2014-05-24 21:27:09
+Main is running at 2014-05-24 21:27:29
+Main is running at 2014-05-24 21:27:49
+Main is running at 2014-05-24 21:28:09
+Main is running at 2014-05-24 21:28:29
+Main is running at 2014-05-24 21:28:49
+Main is running at 2014-05-24 21:29:09
+Main is running at 2014-05-24 21:29:29
+Main is running at 2014-05-24 21:29:49
+Main is running at 2014-05-24 21:30:09
+Main is running at 2014-05-24 21:30:29
+Main is running at 2014-05-24 21:30:49
+Main is running at 2014-05-24 21:31:09
+Main is running at 2014-05-24 21:31:29
+Main is running at 2014-05-24 21:31:49
+Main is running at 2014-05-24 21:32:09
+Main is running at 2014-05-24 21:32:29
+Main is running at 2014-05-24 21:32:49
+Main is running at 2014-05-24 21:33:09
+Main is running at 2014-05-24 21:33:29
+Main is running at 2014-05-24 21:33:49
+Main is running at 2014-05-24 21:34:09
+Main is running at 2014-05-24 21:34:29
+Main is running at 2014-05-24 21:34:49
+Main is running at 2014-05-24 21:35:09
+Main is running at 2014-05-24 21:35:29
+Main is running at 2014-05-24 21:35:49
+Main is running at 2014-05-24 21:36:09
+Main is running at 2014-05-24 21:36:29
+Main is running at 2014-05-24 21:36:49
+Main is running at 2014-05-24 21:37:09
+Main is running at 2014-05-24 21:37:29
+Main is running at 2014-05-24 21:37:49
+Main is running at 2014-05-24 21:38:09
+Main is running at 2014-05-24 21:38:29
+Main is running at 2014-05-24 21:38:49
+Main is running at 2014-05-24 21:39:09
+Main is running at 2014-05-24 21:39:29
+Main is running at 2014-05-24 21:39:49
+Main is running at 2014-05-24 21:40:09
+Main is running at 2014-05-24 21:40:29
+Main is running at 2014-05-24 21:40:49
+Main is running at 2014-05-24 21:41:09
+Main is running at 2014-05-24 21:41:29
+Main is running at 2014-05-24 21:41:49
+Main is running at 2014-05-24 21:42:09
+Main is running at 2014-05-24 21:42:29
+Main is running at 2014-05-24 21:42:49
+Main is running at 2014-05-24 21:43:09
+Main is running at 2014-05-24 21:43:29
+Main is running at 2014-05-24 21:43:49
+Main is running at 2014-05-24 21:44:09
+Main is running at 2014-05-24 21:44:29
+Main is running at 2014-05-24 21:44:49
+Main is running at 2014-05-24 21:45:09
+Main is running at 2014-05-24 21:45:29
+Main is running at 2014-05-24 21:45:49
+Main is running at 2014-05-24 21:46:09
+Main is running at 2014-05-24 21:46:29
+Main is running at 2014-05-24 21:46:49
+Main is running at 2014-05-24 21:47:09
+Main is running at 2014-05-24 21:47:29
+Main is running at 2014-05-24 21:47:49
+Main is running at 2014-05-24 21:48:09
+Main is running at 2014-05-24 21:48:29
+Main is running at 2014-05-24 21:48:49
+Main is running at 2014-05-24 21:49:09
+Main is running at 2014-05-24 21:49:29
+Main is running at 2014-05-24 21:49:49
+Main is running at 2014-05-24 21:50:09
+Main is running at 2014-05-24 21:50:29
+Main is running at 2014-05-24 21:50:49
+Main is running at 2014-05-24 21:51:09
+Main is running at 2014-05-24 21:51:29
+Main is running at 2014-05-24 21:51:49
+Main is running at 2014-05-24 21:52:09
+Main is running at 2014-05-24 21:52:29
+Main is running at 2014-05-24 21:52:49
+Main is running at 2014-05-24 21:53:09
+Main is running at 2014-05-24 21:53:29
+Main is running at 2014-05-24 21:53:49
+Main is running at 2014-05-24 21:54:09
+Main is running at 2014-05-24 21:54:29
+Main is running at 2014-05-24 21:54:49
+Main is running at 2014-05-24 21:55:09
+Main is running at 2014-05-24 21:55:29
+Main is running at 2014-05-24 21:55:49
+Main is running at 2014-05-24 21:56:09
+Main is running at 2014-05-24 21:56:29
+Main is running at 2014-05-24 21:56:49
+Main is running at 2014-05-24 21:57:09
+Main is running at 2014-05-24 21:57:29
+Main is running at 2014-05-24 21:57:49
+Main is running at 2014-05-24 21:58:09
+Main is running at 2014-05-24 21:58:29
+Main is running at 2014-05-24 21:58:49
+Main is running at 2014-05-24 21:59:09
+Main is running at 2014-05-24 21:59:29
+Main is running at 2014-05-24 21:59:49
+Main is running at 2014-05-24 22:00:09
+Main is running at 2014-05-24 22:00:29
+Main is running at 2014-05-24 22:00:49
+Main is running at 2014-05-24 22:01:09
+Main is running at 2014-05-24 22:01:29
+Main is running at 2014-05-24 22:01:49
+Main is running at 2014-05-24 22:02:09
+Main is running at 2014-05-24 22:02:29
+Main is running at 2014-05-24 22:02:49
+Main is running at 2014-05-24 22:03:09
+Main is running at 2014-05-24 22:03:29
+Main is running at 2014-05-24 22:03:49
+Main is running at 2014-05-24 22:04:09
+Main is running at 2014-05-24 22:04:29
+Main is running at 2014-05-24 22:04:49
+Main is running at 2014-05-24 22:05:09
+Main is running at 2014-05-24 22:05:29
+Main is running at 2014-05-24 22:05:49
+Main is running at 2014-05-24 22:06:09
+Main is running at 2014-05-24 22:06:29
+Main is running at 2014-05-24 22:06:49
+Main is running at 2014-05-24 22:07:09
+Main is running at 2014-05-24 22:07:29
+Main is running at 2014-05-24 22:07:49
+Main is running at 2014-05-24 22:08:09
+Main is running at 2014-05-24 22:08:29
+Main is running at 2014-05-24 22:08:49
+Main is running at 2014-05-24 22:09:09
+Main is running at 2014-05-24 22:09:29
+Main is running at 2014-05-24 22:09:49
+Main is running at 2014-05-24 22:10:09
+Main is running at 2014-05-24 22:10:29
+Main is running at 2014-05-24 22:10:49
+Main is running at 2014-05-24 22:11:09
+Main is running at 2014-05-24 22:11:29
+Main is running at 2014-05-24 22:11:49
+Main is running at 2014-05-24 22:12:09
+Main is running at 2014-05-24 22:12:29
+Main is running at 2014-05-24 Socket on 192.168.109.15 created successfully!
+Received -1227187720 string is : { "AliveInterval" : 20, "ChannelNum" : 1, "DeviceType " : "IPC", "ExtraChannel" : 0, "Ret" : 100, "SessionID" : "0x00000009" }
+;
+session id is : 0x00000009
+Send Name SystemInfo: {"Name":"SystemInfo","SessionID":"0x00000009"}
+Received string  SystemInfo is : { "Name" : "SystemInfo", "Ret" : 100, "SessionID" : "0x9", "SystemInfo" : { "AlarmInChannel" : 2, "AlarmOutChannel" : 1, "AudioInChannel" : 1, "BuildTime" : "2013-12-16 15:22:15", "CombineSwitch" : 0, "DeviceRunTime" : "0x0000ADA4", "DigChannel" : 0, "EncryptVersion" : "Unknown", "ExtraChannel" : 0, "HardWare" : "50H10L_S39", "HardWareVersion" : "Unknown", "SerialNo" : "8c02e921079ea55c", "SoftWareVersion" : "V4.02.R11.00002510.10010", "TalkInChannel" : 1, "TalkOutChannel" : 1, "UpdataTime" : "", "UpdataType" : "0x00000000", "VideoInChannel" : 1, "VideoOutChannel" : 1 } }
+;
+Send KeepAlive {"Name":"KeepAlive","SessionID":"0x00000009"}
+Received string KeepAlive is : { "Name" : "KeepAlive", "Ret" : 100, "SessionID" : "0x00000009" }
+
+size of now ===== 19
+Time setting {"Name":"OPTimeSettingNoRTC","OPTimeSettingNoRTC":"2014-05-24 22:33:16","SessionID":"0x00000009"}
+Send name & session id again : {"Name":"","SessionID":"0x00000009"}
+Received string Last 1 is : { "Name" : "", "Ret" : 100, "SessionID" : "0x00000009" }
+
+Received string Last 2 is : { "Name" : "", "Ret" : 100, "SessionID" : "0x00000009" }
+
+Second connect connected successfully!
+Send OPMonitor in child process :: {"Name":"OPMonitor","OPMonitor":{"Action":"Claim","Parameter":{"Channel":0,"CombinMode":"NONE","StreamType":"Main","TransMode":"TCP"}},"SessionID":"0x00000009"}
+Child receive 1:Received string OPMonitor in child is : { "Name" : "OPMonitor", "Ret" : 100, "SessionID" : "0x00000009" }
+
+Socket on 192.168.109.15 created successfully!
+Received -1226634760 string is : { "AliveInterval" : 20, "ChannelNum" : 1, "DeviceType " : "IPC", "ExtraChannel" : 0, "Ret" : 100, "SessionID" : "0x0000000D" }
+;
+session id is : 0x0000000D
+Send Name SystemInfo: {"Name":"SystemInfo","SessionID":"0x0000000D"}
+Received string  SystemInfo is : { "Name" : "SystemInfo", "Ret" : 100, "SessionID" : "0xd", "SystemInfo" : { "AlarmInChannel" : 2, "AlarmOutChannel" : 1, "AudioInChannel" : 1, "BuildTime" : "2013-12-16 15:22:15", "CombineSwitch" : 0, "DeviceRunTime" : "0x0000ADBA", "DigChannel" : 0, "EncryptVersion" : "Unknown", "ExtraChannel" : 0, "HardWare" : "50H10L_S39", "HardWareVersion" : "Unknown", "SerialNo" : "8c02e921079ea55c", "SoftWareVersion" : "V4.02.R11.00002510.10010", "TalkInChannel" : 1, "TalkOutChannel" : 1, "UpdataTime" : "", "UpdataType" : "0x00000000", "VideoInChannel" : 1, "VideoOutChannel" : 1 } }
+;
+Send KeepAlive {"Name":"KeepAlive","SessionID":"0x0000000D"}
+Received string KeepAlive is : { "Name" : "KeepAlive", "Ret" : 100, "SessionID" : "0x0000000D" }
+
+size of now ===== 19
+Time setting {"Name":"OPTimeSettingNoRTC","OPTimeSettingNoRTC":"2014-05-24 22:55:40","SessionID":"0x0000000D"}
+Send name & session id again : {"Name":"","SessionID":"0x0000000D"}
+Received string Last 1 is : { "Name" : "", "Ret" : 100, "SessionID" : "0x0000000D" }
+
+Received string Last 2 is : { "Name" : "", "Ret" : 100, "SessionID" : "0x0000000D" }
+
+Send OPMonitor in father  process :: {"Name":"OPMonitor","OPMonitor":{"Action":"Start","Parameter":{"Channel":0,"CombinMode":"NONE","StreamType":"Main","TransMode":"TCP"}},"SessionID":"0x0000000D"}
+Parent receive 1:
+Empty thing-----------
+Main is running at 2014-05-24 22:56:01
+Main is running at 2014-05-24 22:56:21
+Main is running at 2014-05-24 22:56:41
+Main is running at 2014-05-24 22:57:01
+Main is running at 2014-05-24 22:57:21
+Main is running at 2014-05-24 22:57:41
+Main is running at 2014-05-24 22:58:01
+Main is running at 2014-05-24 22:58:21
+Main is running at 2014-05-24 22:58:41
+Main is running at 2014-05-24 22:59:01
+Main is running at 2014-05-24 22:59:21
+Main is running at 2014-05-24 22:59:41
+Main is running at 2014-05-24 23:00:01
+Main is running at 2014-05-24 23:00:21
+Main is running at 2014-05-24 23:00:41
+Main is running at 2014-05-24 23:01:01
+Main is running at 2014-05-24 23:01:21
+Main is running at 2014-05-24 23:01:41
+Main is running at 2014-05-24 23:02:01
+Main is running at 2014-05-24 23:02:21
+Main is running at 2014-05-24 23:02:41
+Main is running at 2014-05-24 23:03:01
+Main is running at 2014-05-24 23:03:21
+Main is running at 2014-05-24 23:03:41
+Main is running at 2014-05-24 23:04:01
+Main is running at 2014-05-24 23:04:21
+Main is running at 2014-05-24 23:04:41
+Main is running at 2014-05-24 23:05:02
+Main is running at 2014-05-24 23:05:22
+Main is running at 2014-05-24 23:05:42
+Main is running at 2014-05-24 23:06:02
+Main is running at 2014-05-24 23:06:22
+Main is running at 2014-05-24 23:06:42
+Main is running at 2014-05-24 23:07:02
+Main is running at 2014-05-24 23:07:22
+Main is running at 2014-05-24 23:07:42
+Main is running at 2014-05-24 23:08:02
+Main is running at 2014-05-24 23:08:22
+Main is running at 2014-05-24 23:08:42
+Main is running at 2014-05-24 23:09:02
+Main is running at 2014-05-24 23:09:22
+Main is running at 2014-05-24 23:09:42
+Main is running at 2014-05-24 23:10:02
+Main is running at 2014-05-24 23:10:22
+Main is running at 2014-05-24 23:10:42
+Main is running at 2014-05-24 23:11:02
+Main is running at 2014-05-24 23:11:22
+Main is running at 2014-05-24 23:11:42
+Main is running at 2014-05-24 23:12:02
+Main is running at 2014-05-24 23:12:22
+Main is running at 2014-05-24 23:12:42
+Main is running at 2014-05-24 23:13:02
+Main is running at 2014-05-24 23:13:22
+Main is running at 2014-05-24 23:13:42
+Main is running at 2014-05-24 23:14:02
+Main is running at 2014-05-24 23:14:22
+Main is running at 2014-05-24 23:14:42
+Main is running at 2014-05-24 23:15:02
+Main is running at 2014-05-24 23:15:22
+Main is running at 2014-05-24 23:15:42
+Main is running at 2014-05-24 23:16:02
+Main is running at 2014-05-2Socket on 192.168.109.15 created successfully!
+Received -1226634760 string is : { "AliveInterval" : 20, "ChannelNum" : 1, "DeviceType " : "IPC", "ExtraChannel" : 0, "Ret" : 100, "SessionID" : "0x0000000D" }
+;
+session id is : 0x0000000D
+Send Name SystemInfo: {"Name":"SystemInfo","SessionID":"0x0000000D"}
+Received string  SystemInfo is : { "Name" : "SystemInfo", "Ret" : 100, "SessionID" : "0xd", "SystemInfo" : { "AlarmInChannel" : 2, "AlarmOutChannel" : 1, "AudioInChannel" : 1, "BuildTime" : "2013-12-16 15:22:15", "CombineSwitch" : 0, "DeviceRunTime" : "0x0000ADBA", "DigChannel" : 0, "EncryptVersion" : "Unknown", "ExtraChannel" : 0, "HardWare" : "50H10L_S39", "HardWareVersion" : "Unknown", "SerialNo" : "8c02e921079ea55c", "SoftWareVersion" : "V4.02.R11.00002510.10010", "TalkInChannel" : 1, "TalkOutChannel" : 1, "UpdataTime" : "", "UpdataType" : "0x00000000", "VideoInChannel" : 1, "VideoOutChannel" : 1 } }
+;
+Send KeepAlive {"Name":"KeepAlive","SessionID":"0x0000000D"}
+Received string KeepAlive is : { "Name" : "KeepAlive", "Ret" : 100, "SessionID" : "0x0000000D" }
+
+size of now ===== 19
+Time setting {"Name":"OPTimeSettingNoRTC","OPTimeSettingNoRTC":"2014-05-24 22:55:40","SessionID":"0x0000000D"}
+Send name & session id again : {"Name":"","SessionID":"0x0000000D"}
+Received string Last 1 is : { "Name" : "", "Ret" : 100, "SessionID" : "0x0000000D" }
+
+Received string Last 2 is : { "Name" : "", "Ret" : 100, "SessionID" : "0x0000000D" }
+
+Second connect connected successfully!
+Send OPMonitor in child process :: {"Name":"OPMonitor","OPMonitor":{"Action":"Claim","Parameter":{"Channel":0,"CombinMode":"NONE","StreamType":"Main","TransMode":"TCP"}},"SessionID":"0x0000000D"}
+Child receive 1:Received string OPMonitor in child is : { "Name" : "OPMonitor", "Ret" : 100, "SessionID" : "0x0000000D" }
+
+Socket on 192.168.109.15 created successfully!
+Received -1226569224 string is : { "AliveInterval" : 20, "ChannelNum" : 1, "DeviceType " : "IPC", "ExtraChannel" : 0, "Ret" : 100, "SessionID" : "0x0000000F" }
+;
+session id is : 0x0000000F
+Send Name SystemInfo: {"Name":"SystemInfo","SessionID":"0x0000000F"}
+Received string  SystemInfo is : { "Name" : "SystemInfo", "Ret" : 100, "SessionID" : "0xf", "SystemInfo" : { "AlarmInChannel" : 2, "AlarmOutChannel" : 1, "AudioInChannel" : 1, "BuildTime" : "2013-12-16 15:22:15", "CombineSwitch" : 0, "DeviceRunTime" : "0x0000ADDA", "DigChannel" : 0, "EncryptVersion" : "Unknown", "ExtraChannel" : 0, "HardWare" : "50H10L_S39", "HardWareVersion" : "Unknown", "SerialNo" : "8c02e921079ea55c", "SoftWareVersion" : "V4.02.R11.00002510.10010", "TalkInChannel" : 1, "TalkOutChannel" : 1, "UpdataTime" : "", "UpdataType" : "0x00000000", "VideoInChannel" : 1, "VideoOutChannel" : 1 } }
+;
+Send KeepAlive {"Name":"KeepAlive","SessionID":"0x0000000F"}
+Received string KeepAlive is : { "Name" : "KeepAlive", "Ret" : 100, "SessionID" : "0x0000000F" }
+
+size of now ===== 19
+Time setting {"Name":"OPTimeSettingNoRTC","OPTimeSettingNoRTC":"2014-05-24 23:28:24","SessionID":"0x0000000F"}
+Send name & session id again : {"Name":"","SessionID":"0x0000000F"}
+Received string Last 1 is : { "Name" : "", "Ret" : 100, "SessionID" : "0x0000000F" }
+
+Received string Last 2 is : { "Name" : "", "Ret" : 100, "SessionID" : "0x0000000F" }
+
+Second connect connected successfully!
+Send OPMonitor in child process :: {"Name":"OPMonitor","OPMonitor":{"Action":"Claim","Parameter":{"Channel":0,"CombinMode":"NONE","StreamType":"Main","TransMode":"TCP"}},"SessionID":"0x0000000F"}
+Child receive 1:Received string OPMonitor in child is : { "Name" : "OPMonitor", "Ret" : 100, "SessionID" : "0x0000000F" }
+
+Socket on 192.168.109.15 created successfully!
+Received -1227093512 string is : { "AliveInterval" : 20, "ChannelNum" : 1, "DeviceType " : "IPC", "ExtraChannel" : 0, "Ret" : 100, "SessionID" : "0x00000013" }
+;
+session id is : 0x00000013
+Send Name SystemInfo: {"Name":"SystemInfo","SessionID":"0x00000013"}
+Received string  SystemInfo is : { "Name" : "SystemInfo", "Ret" : 100, "SessionID" : "0x13", "SystemInfo" : { "AlarmInChannel" : 2, "AlarmOutChannel" : 1, "AudioInChannel" : 1, "BuildTime" : "2013-12-16 15:22:15", "CombineSwitch" : 0, "DeviceRunTime" : "0x0000ADE4", "DigChannel" : 0, "EncryptVersion" : "Unknown", "ExtraChannel" : 0, "HardWare" : "50H10L_S39", "HardWareVersion" : "Unknown", "SerialNo" : "8c02e921079ea55c", "SoftWareVersion" : "V4.02.R11.00002510.10010", "TalkInChannel" : 1, "TalkOutChannel" : 1, "UpdataTime" : "", "UpdataType" : "0x00000000", "VideoInChannel" : 1, "VideoOutChannel" : 1 } }
+;
+Send KeepAlive {"Name":"KeepAlive","SessionID":"0x00000013"}
+Received string KeepAlive is : { "Name" : "KeepAlive", "Ret" : 100, "SessionID" : "0x00000013" }
+
+size of now ===== 19
+Time setting {"Name":"OPTimeSettingNoRTC","OPTimeSettingNoRTC":"2014-05-24 23:38:13","SessionID":"0x00000013"}
+Send name & session id again : {"Name":"","SessionID":"0x00000013"}
+Received string Last 1 is : { "Name" : "", "Ret" : 100, "SessionID" : "0x00000013" }
+
+Received string Last 2 is : { "Name" : "", "Ret" : 100, "SessionID" : "0x00000013" }
+
+Second connect connected successfully!
+Send OPMonitor in child process :: {"Name":"OPMonitor","OPMonitor":{"Action":"Claim","Parameter":{"Channel":0,"CombinMode":"NONE","StreamType":"Main","TransMode":"TCP"}},"SessionID":"0x00000013"}
+Child receive 1:Received string OPMonitor in child is : { "Name" : "OPMonitor", "Ret" : 100, "SessionID" : "0x00000013" }
+
+Socket on 192.168.109.15 created successfully!
+Received -1226577416 string is : { "AliveInterval" : 20, "ChannelNum" : 1, "DeviceType " : "IPC", "ExtraChannel" : 0, "Ret" : 100, "SessionID" : "0x00000015" }
+;
+session id is : 0x00000015
+Send Name SystemInfo: {"Name":"SystemInfo","SessionID":"0x00000015"}
+Received string  SystemInfo is : { "Name" : "SystemInfo", "Ret" : 100, "SessionID" : "0x15", "SystemInfo" : { "AlarmInChannel" : 2, "AlarmOutChannel" : 1, "AudioInChannel" : 1, "BuildTime" : "2013-12-16 15:22:15", "CombineSwitch" : 0, "DeviceRunTime" : "0x0000ADE6", "DigChannel" : 0, "EncryptVersion" : "Unknown", "ExtraChannel" : 0, "HardWare" : "50H10L_S39", "HardWareVersion" : "Unknown", "SerialNo" : "8c02e921079ea55c", "SoftWareVersion" : "V4.02.R11.00002510.10010", "TalkInChannel" : 1, "TalkOutChannel" : 1, "UpdataTime" : "", "UpdataType" : "0x00000000", "VideoInChannel" : 1, "VideoOutChannel" : 1 } }
+;
+Send KeepAlive {"Name":"KeepAlive","SessionID":"0x00000015"}
+Received string KeepAlive is : { "Name" : "KeepAlive", "Ret" : 100, "SessionID" : "0x00000015" }
+
+size of now ===== 19
+Time setting {"Name":"OPTimeSettingNoRTC","OPTimeSettingNoRTC":"2014-05-24 23:39:46","SessionID":"0x00000015"}
+Send name & session id again : {"Name":"","SessionID":"0x00000015"}
+Received string Last 1 is : { "Name" : "", "Ret" : 100, "SessionID" : "0x00000015" }
+
+Received string Last 2 is : { "Name" : "", "Ret" : 100, "SessionID" : "0x00000015" }
+
+Second connect connected successfully!
+Send OPMonitor in child process :: {"Name":"OPMonitor","OPMonitor":{"Action":"Claim","Parameter":{"Channel":0,"CombinMode":"NONE","StreamType":"Main","TransMode":"TCP"}},"SessionID":"0x00000015"}
+Child receive 1:Received string OPMonitor in child is : { "Name" : "OPMonitor", "Ret" : 100, "SessionID" : "0x00000015" }
+
+Socket on 192.168.109.15 created successfully!
+Received -1227126280 string is : { "AliveInterval" : 20, "ChannelNum" : 1, "DeviceType " : "IPC", "ExtraChannel" : 0, "Ret" : 100, "SessionID" : "0x00000017" }
+;
+session id is : 0x00000017
+Send Name SystemInfo: {"Name":"SystemInfo","SessionID":"0x00000017"}
+Received string  SystemInfo is : { "Name" : "SystemInfo", "Ret" : 100, "SessionID" : "0x17", "SystemInfo" : { "AlarmInChannel" : 2, "AlarmOutChannel" : 1, "AudioInChannel" : 1, "BuildTime" : "2013-12-16 15:22:15", "CombineSwitch" : 0, "DeviceRunTime" : "0x0000ADEA", "DigChannel" : 0, "EncryptVersion" : "Unknown", "ExtraChannel" : 0, "HardWare" : "50H10L_S39", "HardWareVersion" : "Unknown", "SerialNo" : "8c02e921079ea55c", "SoftWareVersion" : "V4.02.R11.00002510.10010", "TalkInChannel" : 1, "TalkOutChannel" : 1, "UpdataTime" : "", "UpdataType" : "0x00000000", "VideoInChannel" : 1, "VideoOutChannel" : 1 } }
+;
+Send KeepAlive {"Name":"KeepAlive","SessionID":"0x00000017"}
+Received string KeepAlive is : { "Name" : "KeepAlive", "Ret" : 100, "SessionID" : "0x00000017" }
+
+size of now ===== 19
+Time setting {"Name":"OPTimeSettingNoRTC","OPTimeSettingNoRTC":"2014-05-24 23:44:55","SessionID":"0x00000017"}
+Send name & session id again : {"Name":"","SessionID":"0x00000017"}
+Received string Last 1 is : { "Name" : "", "Ret" : 100, "SessionID" : "0x00000017" }
+
+Received string Last 2 is : { "Name" : "", "Ret" : 100, "SessionID" : "0x00000017" }
+
+Second connect connected successfully!
+Send OPMonitor in child process :: {"Name":"OPMonitor","OPMonitor":{"Action":"Claim","Parameter":{"Channel":0,"CombinMode":"NONE","StreamType":"Main","TransMode":"TCP"}},"SessionID":"0x00000017"}
+Child receive 1:Received string OPMonitor in child is : { "Name" : "OPMonitor", "Ret" : 100, "SessionID" : "0x00000017" }
+
