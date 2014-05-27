@@ -43,11 +43,16 @@ do
 	let "timeDifference=currentTime - latestDirModiTime"
 	if [ "$timeDifference" -gt "$timeStopedRestart" ]; then
 
+		sudo ./stop.sh $ipNum 
+		sudo ./timelapse.sh $ipNum
+	
 		#sudo ./restart.sh $ipNum
 		sudo echo "${ipNum} is run out of time for 300 seconds, "$timeDifference=$currentTime - $latestDirModiTime",please check it!" | mailx -v -s "IPCamera ${ipNum} is wrong  " 976582265@qq.com
         echo "${ipNum} is run out of time for 300 seconds, "$timeDifference=$currentTime - $latestDirModiTime",please check it!"
 		#sudo echo "Camera $ipNum stoped and then restarted at `date +"%Y-%m-%d %H:%M:%S "`" | tee -a ${pipeProgramPath}/log/watchdog.log
 		sudo echo "Camera $ipNum is not working at `date +"%Y-%m-%d %H:%M:%S "`" | tee -a ${pipeProgramPath}/log/watchdog.log
+		
+		
 	fi
 
 	#echo $timeDifference

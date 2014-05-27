@@ -17,7 +17,7 @@ if [[ -n "$1" ]]; then
 		    ipcConfigLineArray[i]=${line}
 		  fi
 	  fi
-	done < ${pipeProgramPath}ipcs.info
+	done < /etc/ipcs.info
 else
 	i=0
 	while read line; do
@@ -26,7 +26,7 @@ else
 	    ipcConfigLineArray[i]=${line}
 	    ((i++))
 	  fi
-	done < ${pipeProgramPath}ipcs.info
+	done < /etc/ipcs.info
 fi
 
 
@@ -37,44 +37,12 @@ do
 	ipcConfigArray=($(echo $ipcConfigLine | tr ";" "\n"))
 	######Find or create the save directory by the datetime of now##########
 	dateTimeNow=`date +%Y%m%d`
-	dateTimeIntervalArray=($(echo ${ipcConfigArray[2]} | tr "," "\n"))
-	##dateTime And Interval eg. 20140405-20140425-30
-	dateTimeIntervalIndex=-1
-	## images shooting intreval
-	imageShootInterval=10
-	for dateTimeInterval in "${dateTimeIntervalArray[@]}"
-	do
-	  dateTimeArray=($(echo $dateTimeInterval | tr "-" "\n"))
-	  #echo "$dateTimeNow ${dateTimeArray[0]} $dateTimeNow ${dateTimeArray[1]}" 
-	  if [ "$dateTimeNow" -gt "${dateTimeArray[0]}" ] && [ "$dateTimeNow" -lt "${dateTimeArray[1]}" ]; then
-	 	 dateTimeIntervalIndex=$dateTimeInterval
-	 	 imageShootInterval=${dateTimeArray[2]}
-	  fi
-	  #for dateTime in "${dateTimeArray[@]}"
-	  #do
-	  	#echo $dateTime
-	  	#if[ "$dateTimeNow" -gt ${date}]
-	  #done
-	  #echo $dateTimeInterval
-	done
 	
-	#if [ "$dateTimeIntervalIndex" -eq "-1" ]; then
-	#if length less than 3, it means something wrong
-	if [ "${#dateTimeIntervalIndex}" -lt "3" ]; then
-		echo -e "Warning, The config line upside is out of time! $ipcConfig \n-------------\n"
-	else 
-		#Start the jobs
-		echo "sudo ${pipeProgramPath}videoCapture ${ipcConfigArray[1]} ${ipcConfigArray[0]} ${imageSaveMainDir}"
-		(
-			sudo ${pipeProgramPath}videoCapture ${ipcConfigArray[1]} ${ipcConfigArray[0]} ${imageSaveMainDir} >> ${pipeProgramPath}log/${ipcConfigArray[0]}video.log & 
-			echo $! > ${pipeProgramPath}/pids/${ipcConfigArray[0]}video.pids
-			break
-		)
-		#(sudo mkdir /home/media/dkapm1/$dateTimeIntervalIndex)
-	fi
-	#echo $dateTimeIntervalIndex
-done
+	#Start the jobs
+	echo "sudo ${pipeProgramPath}videoCapture${ipcConfigArray[0]} ${ipcConfigArray[1]} ${ipcConfigArray[0]} ${imageSaveMainDir}"
+	(
+		sudo ${pipeProgramPath}videoCapture${ipcConfigArray[0]} ${ipcConfigArray[1]} ${ipcConfigArray[0]} ${imageSaveMainDir} >> ${pipeProgramPath}log/${ipcConfigArray[0]}video.log & 
+	)
 
-#echo "total array elements: ${#ipcConfig[@]}"
-#echo "ipcConfig[2]: ${ipcConfig[2]}"
-
+  done
+ 
