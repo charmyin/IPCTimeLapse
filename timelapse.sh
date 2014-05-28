@@ -50,34 +50,28 @@ do
 	#1.Create directory  /home/media/dkapm1/15/20140405-20140425-30
 	echo "mkdir $imageSaveMainDir${ipcConfigArray[0]}/$dateTimeNow"
 	#If exist? Do something to prevent this.
-	randomName=''
 	
-	picDirPath=$imageSaveMainDir${ipcConfigArray[0]}/$dateTimeNow
+	dirCounts=`ls $imageSaveMainDir${ipcConfigArray[0]}/ | wc -l`
+	 
+	let dirCounts=dirCounts+1
+	picDirPath=$imageSaveMainDir${ipcConfigArray[0]}/$dirCounts
 	echo "$picDirPath"
-	
-	while [ -e "$picDirPath" ]
-	do
-		randomName=$RANDOM
-		picDirPath=$imageSaveMainDir${ipcConfigArray[0]}/$dateTimeNow$randomName
-		break
-	done
 	
 	(sudo mkdir -p $picDirPath)
 	
 	#2.start job 
 	echo "sudo ${pipeProgramPath}main${ipcConfigArray[0]} ${ipcConfigArray[1]} ${ipcConfigArray[0]} "
 	(
-		sudo ${pipeProgramPath}main${ipcConfigArray[0]} ${ipcConfigArray[1]} ${ipcConfigArray[0]} >> ${pipeProgramPath}/log/main${ipcConfigArray[0]}.log & 
+		sudo ${pipeProgramPath}main${ipcConfigArray[0]} ${ipcConfigArray[1]} ${ipcConfigArray[0]} >> ${pipeProgramPath}log/main${ipcConfigArray[0]}.log & 
 		#echo $! > ${pipeProgramPath}/pids/${ipcConfigArray[0]}.pids
 	)
 	#(sudo mkdir /home/media/dkapm1/$dateTimeIntervalIndex)
 	sleep 2
 	 
-	 
 	echo "sudo ffmpeg${ipcConfigArray[0]} -f h264 -i /tmp/ipcfifo${ipcConfigArray[0]} -qscale:v 1 -f image2 -vf fps=fps=1/$imageShootInterval $picDirPath/%06d.jpg"
 	(
 		sudo ffmpeg${ipcConfigArray[0]} -f h264 -i /tmp/ipcfifo${ipcConfigArray[0]} -qscale:v 1 -f image2 -vf fps=fps=1/$imageShootInterval $picDirPath/%06d.jpg &
-		 #   2>> ${pipeProgramPath}/log/ffmpeg${ipcConfigArray[0]}.log 
+		#   2>> ${pipeProgramPath}/log/ffmpeg${ipcConfigArray[0]}.log 
 		#echo $! >> ${pipeProgramPath}/pids/${ipcConfigArray[0]}.pids
 	)
 	 
