@@ -48,15 +48,13 @@ do
 	 
 	#Start the jobs
 	#1.Create directory  /home/media/dkapm1/15/20140405-20140425-30
+	echo "mkdir $imageSaveMainDir${ipcConfigArray[0]}/$dateTimeNow"
 	#If exist? Do something to prevent this.
-	if [ ! -e  "$imageSaveMainDir${ipcConfigArray[0]}/" ]; then
-	   echo "mkdir $imageSaveMainDir${ipcConfigArray[0]}/"
-           sudo mkdir -p $imageSaveMainDir${ipcConfigArray[0]}/  	  
-        fi 
-	lastDirName=`ls $imageSaveMainDir${ipcConfigArray[0]}/ | sort -nr | head -n 1`
+	
+	dirCounts=`ls $imageSaveMainDir${ipcConfigArray[0]}/ | wc -l`
 	 
-	let lastDirName=lastDirName+1
-	picDirPath=$imageSaveMainDir${ipcConfigArray[0]}/$lastDirName
+	let dirCounts=dirCounts+1
+	picDirPath=$imageSaveMainDir${ipcConfigArray[0]}/$dirCounts
 	echo "$picDirPath"
 	
 	(sudo mkdir -p $picDirPath)
